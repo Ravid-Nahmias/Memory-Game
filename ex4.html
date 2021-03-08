@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Memory Game</title>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body onload="start()">
+    <header>
+        <div class="button">
+            <button onClick="window.location.reload()">New Game</button>
+        </div>
+        <div class="move_counter">Moves : <a id="moves">0</a> Matches : <a id="matches">0</a> </div>
+    </header>
+
+    <section class="memory-game">
+
+        <div class="memory-card" data-framework="candy">
+            <img class="front-face" src="candy.png" alt="Candy">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="candy">
+            <img class="front-face" src="candy.png" alt="Candy">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="donut">
+            <img class="front-face" src="donut.png" alt="Donut">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="donut">
+            <img class="front-face" src="donut.png" alt="Donut">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="fruit-cake">
+            <img class="front-face" src="fruit-cake.png" alt="Fruit-cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="fruit-cake">
+            <img class="front-face" src="fruit-cake.png" alt="Fruit-cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="gingerbread-man">
+            <img class="front-face" src="gingerbread-man.png" alt="Gingerbread-man">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="gingerbread-man">
+            <img class="front-face" src="gingerbread-man.png" alt="Gingerbread-man">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="ice-cream">
+            <img class="front-face" src="ice-cream.png" alt="Ice-cream">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="ice-cream">
+            <img class="front-face" src="ice-cream.png" alt="Ice-cream">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="mulled-wine">
+            <img class="front-face" src="mulled-wine.png" alt="Mulled-wine">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="mulled-wine">
+            <img class="front-face" src="mulled-wine.png" alt="Mulled-wine">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="burry-cake">
+            <img class="front-face" src="burry-cake.png" alt="Burry-cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="burry-cake">
+            <img class="front-face" src="burry-cake.png" alt="Burry-cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="cake">
+            <img class="front-face" src="cake.png" alt="Cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="cake">
+            <img class="front-face" src="cake.png" alt="Cake">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="juice">
+            <img class="front-face" src="juice.png" alt="Juice">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="juice">
+            <img class="front-face" src="juice.png" alt="Juice">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="lollipop">
+            <img class="front-face" src="Lollipop.png" alt="Lollipop">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="lollipop">
+            <img class="front-face" src="Lollipop.png" alt="Lollipop">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="cake2">
+            <img class="front-face" src="cake2.png" alt="Cake2">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="cake2">
+            <img class="front-face" src="cake2.png" alt="Cake2">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="cookies">
+            <img class="front-face" src="cookies.png" alt="Cookies">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="cookies">
+            <img class="front-face" src="cookies.png" alt="Cookies">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+        <div class="memory-card" data-framework="pudding">
+            <img class="front-face" src="pudding.png" alt="Pudding">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="pudding">
+            <img class="front-face" src="pudding.png" alt="Pudding">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="apple-pie">
+            <img class="front-face" src="apple-pie.png" alt="Apple-pie">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="apple-pie">
+            <img class="front-face" src="apple-pie.png" alt="Apple-pie">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+
+        <div class="memory-card" data-framework="hot-chocolate">
+            <img class="front-face" src="hot-chocolate.png" alt="hot-chocolate">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+        <div class="memory-card" data-framework="hot-chocolate">
+            <img class="front-face" src="hot-chocolate.png" alt="hot-chocolate">
+            <img class="back-face" src="blank.png" alt="Memory Card">
+        </div>
+
+    </section>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
